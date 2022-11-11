@@ -61,4 +61,8 @@ public class DBActivity extends AppCompatActivity {
 
         mDBView.setText(sb.toString());
     }
+
+    public void onBack(View view) {
+        finish();
+    }
 }
