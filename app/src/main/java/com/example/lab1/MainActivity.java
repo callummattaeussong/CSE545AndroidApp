@@ -32,4 +32,9 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, DBActivity.class);
         startActivity(intent);
     }
+
+    public void onBroadcast(View view) {
+        Intent broadcastIntent = new Intent(MainActivity.this, BroadcastActivity.class);
+        view.getContext().startActivity(broadcastIntent);
+    }
 }
