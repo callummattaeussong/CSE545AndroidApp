@@ -27,4 +27,9 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
+
+    public void ToDB(View view) {
+        Intent intent = new Intent(this, DBActivity.class);
+        startActivity(intent);
+    }
 }
